@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Vaibhav & Sakshi · Wedding Invitation</title>
+<meta name="description" content="You are invited to the wedding of Vaibhav & Sakshi · 2 December 2026 · Jim Corbett">
+<meta property="og:type" content="website"><meta property="og:title" content="Vaibhav & Sakshi · Wedding Invitation">
+<meta property="og:description" content="Wednesday, 2nd December 2026 · Jim Corbett. Open your invitation.">
+<meta property="og:image" content="assets/monogram.svg"><meta name="theme-color" content="#FAF5EE">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&family=Noto+Serif+Devanagari:wght@400;600&family=Hind:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body class="locked">
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<div id="gate" role="dialog" aria-label="Invitation">
+ <div class="door l"><div class="jali"></div><div class="arch"></div><i class="ring"></i></div>
+ <div class="door r"><div class="jali"></div><div class="arch"></div><i class="ring"></i></div>
+ <div class="glow"></div>
+ <div class="gc" id="gc">
+  <svg class="gan" viewBox="0 0 80 80" fill="none" stroke="#C29B58" stroke-width="1.4"><path d="M30 18q10-12 20 0M28 20q-14-4-16 14t12 20M52 20q14-4 16 14t-12 20"/><path d="M40 24c-9 0-12 10-12 20s5 14 12 14 12-4 12-14-3-20-12-20zM40 34v26q0 8-8 8t-4-8"/><circle cx="34" cy="38" r="1.3"/><circle cx="46" cy="38" r="1.3"/><path d="M26 66q14 8 28 0M22 60q-4 8 6 10M58 60q4 8-6 10"/></svg>
+  <p class="dev" data-i="ganesha"></p>
+  <div class="seal" id="seal"><img src="assets/monogram.svg" alt="VS"></div>
+  <p class="small" data-i="invitedTo"></p>
+  <h1 class="nm" data-names></h1>
+  <p class="small" data-i="date"></p>
+  <button class="btn" id="open" data-i="open"></button>
+  <button class="lang" data-lang></button>
+ </div>
+</div>
+
+<header class="bar"><button id="music" aria-label="Music" hidden>♪</button><span class="mini" data-names-s></span><button class="lang" data-lang></button></header>
+
+<main>
+<section id="hero" data-flower="rose"><div class="mandala"></div>
+ <svg class="arch-s" viewBox="0 0 240 300" fill="none"><path class="draw" d="M20 296V120C20 90 40 84 48 64c6-16-2-28 20-36 14-5 26-14 52-28 26 14 38 23 52 28 22 8 14 20 20 36 8 20 28 26 28 56v176Z"/><path class="draw d2" d="M34 296V124c0-24 18-28 26-46 4-12 0-20 14-28 16-6 28-16 46-26 18 10 30 20 46 26 14 8 10 16 14 28 8 18 26 22 26 46v172"/></svg>
+ <img class="mono" src="assets/monogram.svg" alt="">
+ <h2 class="nm big" data-names></h2><div class="dia"></div>
+ <p class="date" data-i="date"></p><p class="small" data-i="city"></p>
+</section>
+
+<section id="bless" data-flower="genda">
+ <svg class="lot" viewBox="0 0 60 60"><use href="#lotus"/></svg>
+ <h2 data-i="blessTitle"></h2><p class="dev shl" data-i="shloka"></p><div class="dia"></div>
+ <p class="small" data-i="heaven"></p><p class="b" data-late></p>
+</section>
+
+<section id="invite" data-flower="lotusrose">
+ <div class="card"><b class="c tl">❁</b><b class="c tr">❁</b><b class="c bl">❁</b><b class="c br">❁</b>
+  <svg class="bells" viewBox="0 0 200 30"><use href="#bells"/></svg>
+  <p class="b" data-i="host"></p><p data-i="invite"></p>
+  <h3 class="nm" data-i="names.bride"></h3><p class="it" data-i="with"></p><h3 class="nm" data-i="names.groom"></h3>
+  <p class="small" data-i="grand"></p><p class="b" data-i="grandP"></p><p class="small" data-i="son"></p><p class="b" data-i="sonP"></p>
+  <div class="dia"></div><p class="it" data-i="hearts"></p></div>
+</section>
+
+<section id="count" data-flower="lotus"><h2 data-i="cdTitle"></h2>
+ <div class="cd" id="cd"><div><b>0</b><span data-i="d"></span></div><div><b>0</b><span data-i="h"></span></div><div><b>0</b><span data-i="m"></span></div><div><b>0</b><span data-i="s"></span></div></div></section>
+
+<section id="fn" data-flower="ashoka"><h2 data-i="fnTitle"></h2><p class="small" data-i="fnSub"></p>
+ <div id="tl"><i class="thread"><i id="fill"></i></i></div></section>
+
+<section id="gal" data-flower="bougain"><h2 data-i="galTitle"></h2><div class="mas" id="mas"></div></section>
+
+<section id="end" data-flower="gold">
+ <h2 data-i="thanks"></h2><p class="it" data-i="thanksTxt"></p><div class="dia"></div>
+ <div class="row"><button class="btn" id="share" data-i="share"></button><a class="btn o" id="wa" target="_blank" rel="noopener" data-i="wa"></a>
+ <button class="btn o" id="cp" data-i="copy"></button><button class="btn o" onclick="print()" data-i="pdf"></button></div>
+ <h3 data-i="rsvp"></h3><p class="it" data-i="await"></p>
+ <ul class="g" id="guests"></ul>
+ <p class="small" data-i="rsvpFrom"></p><p class="b" data-i="rsvpName"></p><p data-i="rsvpAddr"></p>
+ <a class="tel" id="tel"></a><br><a href="#hero" class="small" data-i="top"></a></section>
+</main>
+
+<div id="lb" hidden><button id="lx">×</button><div id="li"></div></div>
+<div id="toast"></div>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="lotus" viewBox="0 0 60 60"><g fill="none" stroke="#C29B58" stroke-width="1"><path d="M30 8c8 8 8 22 0 34-8-12-8-26 0-34ZM30 42c-4-10-16-14-24-12 2 12 14 20 24 12ZM30 42c4-10 16-14 24-12-2 12-14 20-24 12Z"/><path d="M30 50v8"/></g></symbol>
+<symbol id="bells" viewBox="0 0 200 30"><g fill="none" stroke="#C29B58" stroke-width="1"><path d="M20 0v8M100 0v10M180 0v8"/><path d="M14 8h12l2 12H12ZM94 10h12l2 12H92ZM174 8h12l2 12h-16Z"/><circle cx="20" cy="24" r="1.5"/><circle cx="100" cy="26" r="1.5"/><circle cx="180" cy="24" r="1.5"/></g></symbol></defs></svg>
+<script src="config.js"></script><script src="i18n.js"></script><script src="app.js"></script>
+</body></html>
